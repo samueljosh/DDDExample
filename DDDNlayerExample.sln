@@ -3,8 +3,56 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{9BC7F629-5D80-4E20-9AF0-5F4D781B91BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{D0D106A4-37ED-47FC-9A45-3FB382469FDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{86EB95A4-090E-405E-BE49-628033999EC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{D83C9A8A-BA81-4A22-895E-368ADEA67ECC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDNLayerExample.Domain", "DDDNLayerExample.Domain\DDDNLayerExample.Domain.csproj", "{FE31588C-4D8C-4A61-8344-9F7B9164353B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDNLayerExample.Infra.Data", "ClassLibrary1\DDDNLayerExample.Infra.Data.csproj", "{8D141029-5A17-4A37-AC5B-4E3EEF5CB4A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Context", "Context", "{0A89C3E9-101C-4C2D-93D5-6BA28EF37BD2}"
+	ProjectSection(SolutionItems) = preProject
+		MySqlContext.cs = MySqlContext.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mapping", "Mapping", "{E7BB3499-CDBF-4E7A-A112-F66B942E8132}"
+	ProjectSection(SolutionItems) = preProject
+		UserMap.cs = UserMap.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{67666FA2-A700-4E23-86C5-0B5A7E8082A3}"
+	ProjectSection(SolutionItems) = preProject
+		BaseRepository..cs = BaseRepository..cs
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE31588C-4D8C-4A61-8344-9F7B9164353B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE31588C-4D8C-4A61-8344-9F7B9164353B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE31588C-4D8C-4A61-8344-9F7B9164353B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE31588C-4D8C-4A61-8344-9F7B9164353B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D141029-5A17-4A37-AC5B-4E3EEF5CB4A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D141029-5A17-4A37-AC5B-4E3EEF5CB4A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D141029-5A17-4A37-AC5B-4E3EEF5CB4A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D141029-5A17-4A37-AC5B-4E3EEF5CB4A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FE31588C-4D8C-4A61-8344-9F7B9164353B} = {D83C9A8A-BA81-4A22-895E-368ADEA67ECC}
+		{8D141029-5A17-4A37-AC5B-4E3EEF5CB4A3} = {9BC7F629-5D80-4E20-9AF0-5F4D781B91BA}
+		{0A89C3E9-101C-4C2D-93D5-6BA28EF37BD2} = {9BC7F629-5D80-4E20-9AF0-5F4D781B91BA}
+		{E7BB3499-CDBF-4E7A-A112-F66B942E8132} = {9BC7F629-5D80-4E20-9AF0-5F4D781B91BA}
+		{67666FA2-A700-4E23-86C5-0B5A7E8082A3} = {9BC7F629-5D80-4E20-9AF0-5F4D781B91BA}
 	EndGlobalSection
 EndGlobal
